@@ -16,7 +16,7 @@ int main()
     while (strlen(mot)==0 && strlen(mot)>strlen(phrase));//saisir un mot non null
     toupper(phrase);//mot majiscule
     toupper(mot); // mot majiscule
-    int a=strlen(phrase)-strlen(mot);
+    int a=strlen(phrase)-strlen(mot)+1;
     int nb=0,i=0;
     for(i=0;i<a;i++){
         if (strncmp(mot,phrase+i,strlen(mot))==0){//recherche mot dans phrase
